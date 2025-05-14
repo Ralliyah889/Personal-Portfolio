@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #fef6e4, #fde2e4, #cde7be); /* Pastel gradient */
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 40px 20px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.ribbon {
+    position: relative;
+    background: #ffc8dd; /* Pastel pink */
+    color: #5a3e36;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.ribbon::before,
+.ribbon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    border: 10px solid transparent;
+}
+
+.ribbon::before {
+    left: 0;
+    border-top-color: #ffc8dd;
+}
+
+.ribbon::after {
+    right: 0;
+    border-top-color: #ffc8dd;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+/* Responsive animation */
+@media (max-width: 500px) {
+    dotlottie-player {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
